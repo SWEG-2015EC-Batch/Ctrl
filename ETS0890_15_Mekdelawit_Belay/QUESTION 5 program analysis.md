@@ -1,5 +1,7 @@
-Design an algorithm and write a to read an employee name weekly working hours, bonus rate per hour and base salary and find the employees gross-salary, net salary and bonus payment. (Hint: pension rate – 5%, tax: 15%).
+5,Design an algorithm and write a to read an employee name weekly working hours, bonus rate per hour and base salary and find the employees gross-salary, net salary and bonus payment. (Hint: pension rate – 5%, tax: 15%).
+
 1,PROBLEM ANALYSIS 
+
 1.1,Input-----weekly working hours, bonus rate per hour, gross salary,
 1.2,output-----base salary, net salary and bonus payment 
 1.3,operation/process
@@ -15,6 +17,7 @@ Design an algorithm and write a to read an employee name weekly working hours, b
     -display base salary, net salary and bonus payment 
  
 2,Pseudocode Algorithm 
+
 step1= start 
 step2=employee name, read weekly working hours, bonus rate per hour and gross salary 
 step3=initiallized overtime from 1
