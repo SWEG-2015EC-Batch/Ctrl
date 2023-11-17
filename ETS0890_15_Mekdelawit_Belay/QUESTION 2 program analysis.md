@@ -1,4 +1,4 @@
-Write a program that promotes the capacity in gallons of an automobile fuel tank and miles per gallons the automobile can be driven.The program output the number miles the automobile can be driven without refueling.
+2,Write a program that promotes the capacity in gallons of an automobile fuel tank and miles per gallons the automobile can be driven.The program output the number miles the automobile can be driven without refueling.
 
 1,PROBLEM ANALYSIS
 
