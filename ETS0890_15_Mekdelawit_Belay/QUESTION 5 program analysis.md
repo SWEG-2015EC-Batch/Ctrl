@@ -3,7 +3,9 @@
 1,PROBLEM ANALYSIS 
 
 1.1,Input-----weekly working hours, bonus rate per hour, gross salary,
+
 1.2,output-----base salary, net salary and bonus payment 
+
 1.3,operation/process
     -read weekly working hours,employee name,gross salary,bonus
 	-initiallize overtime from 0,
@@ -18,14 +20,24 @@
  
 2,Pseudocode Algorithm 
 
-step1= start 
-step2=employee name, read weekly working hours, bonus rate per hour and gross salary 
+step1= start
+
+step2=employee name, read weekly working hours, bonus rate per hour and gross salary
+
 step3=initiallized overtime from 1
-step4=define pansion rate and tax rate as constant  
+
+step4=define pansion rate and tax rate as constant
+
 step5=calculate tax=tax rate*gross salary
+
 step6=calculate pension=pension*gross salary
+
 step7=calculate base salary=gross salary-tax-pension
-step8=calculate net salary= gross salary-tax-pension+overtime 
+
+step8=calculate net salary= gross salary-tax-pension+overtime
+
 step9=calculate bonus payment= overtime or bonus rate per hour* weekly working hour-56 
-step10=display results 
+
+step10=display results
+
 step11=end 
