@@ -8,14 +8,23 @@
 
 1.3,operation/process
     -read weekly working hours,employee name,gross salary,bonus
+    
 	-initiallize overtime from 0,
-	-define pension rate and tax rate as constant 
-    -calculate base salary=gross salary-tax-pension 
-    -calculate net salary= gross salary-tax-pension+overtime 
-    -calculate bonus payment= overtime or bonus rate per hour* weekly working hour-56 
+ 
+	-define pension rate and tax rate as constant
+ 
+    -calculate base salary=gross salary-tax-pension
+    
+    -calculate net salary= gross salary-tax-pension+overtime
+    
+    -calculate bonus payment= overtime or bonus rate per hour* weekly working hour-56
+    
     -to calculate the above operation
+    
      1,calculate tax=taxrate*gross salary
+     
      2,calculate pension=pensionrate*gross salary
+     
     -display base salary, net salary and bonus payment 
  
 2,Pseudocode Algorithm 
