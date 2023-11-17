@@ -3,9 +3,7 @@
 1,PROBLEM ANALYSIS
 
 1.1,INPUT-----gallon rate,value of gallon
-
 1.2,output-----how many miles
-
 1.3,operation/process
 
       -read value of gallon
@@ -17,13 +15,8 @@
 2,PSEUDOCODE ALGORITHM
 
 step1,start
-
 step2,read gallon value
-
 step3,read gallon rate as constant
-
 step4,calculate miles=gallon rate*gallon
-
 step5,print number of miles
-
 step6,end
