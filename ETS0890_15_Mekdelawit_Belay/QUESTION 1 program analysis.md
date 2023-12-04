@@ -1,4 +1,4 @@
- 1,Make a program that calculate and display the body mass index(BMI) of a person.
+** 1,Make a program that calculate and display the body mass index(BMI) of a person.**
 1,PROBLEM ANALYSIS
 1.1,INPUT----height,weight
 1.2,OUTPUT-----BMI
