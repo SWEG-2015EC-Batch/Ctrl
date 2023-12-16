@@ -12,7 +12,7 @@ int main()
 
    cout<<" enter number of column:"<< endl;
    cin>>n;
-   cout <<" enter your choice <1,2,3,4,5.6,7,8,9,>"<<endl;
+   cout <<" enter your choice <1-14>"<<endl;
    cin>>choice;
 
    switch(choice){
