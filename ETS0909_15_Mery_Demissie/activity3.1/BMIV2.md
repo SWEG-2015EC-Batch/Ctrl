@@ -1,1 +1,1 @@
-<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="2" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1"><mxGeometry x="280" y="110" width="190" height="30" as="geometry"/></mxCell></root></mxGraphModel>
+![image](https://github.com/SWEG-2015EC-Batch/Ctrl/assets/149376575/7edca1ea-b3ba-4684-b47c-7ba9e861d300)
