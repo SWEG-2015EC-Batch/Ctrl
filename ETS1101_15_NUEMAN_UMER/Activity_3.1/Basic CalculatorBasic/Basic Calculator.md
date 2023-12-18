@@ -47,3 +47,31 @@ The program displays the result of the arithmetic operation and prompts the user
 
    k. Continue the loop if status is not equal to 0
 4. End program
+
+## Flowchart
+
+```mermaid
+
+graph TB
+  start(start) --> do[do]
+  do --> InputNumbers[/Input num_1, num_2/]
+  InputNumbers --> InputOperator[/Input sign of operation/]
+  InputOperator --> SwitchOperator{"Switch(operate)"}
+  SwitchOperator --> PlusCase[Case '+': result = num_1 + num_2]
+  PlusCase -- True --> DisplayResult[Display num1, operate, num_2, '=', result]
+  PlusCase -- False --> MinusCase[Case '-': result = num_1 - num_2]
+  MinusCase -- True --> DisplayResult
+  MinusCase -- False --> MultiplyCase[Case '*': result = num_1 * num_2]
+  MultiplyCase -- True --> DisplayResult
+  MultiplyCase -- False --> DivideCase[Case '/': result = num_1 / num_2]
+  DivideCase -- True --> DisplayResult
+  DivideCase -- False --> ModuloCase[Case '%': result = num_1 % num_2]
+  ModuloCase -- True --> DisplayResult
+  ModuloCase -- False --> DefaultCase["Default: Display 'operate sign please input +,-,*,/, or %'"]
+  DisplayResult --> status[Read 'num_3' as 0 or 1]
+  status --> whileDo{"While (num_3 != 0)"}
+  whileDo -- True --> do
+  whileDo -- False --> num(End)
+  DefaultCase --> InputOperator
+
+```
