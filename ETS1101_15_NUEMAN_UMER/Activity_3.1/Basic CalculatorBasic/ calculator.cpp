@@ -1,46 +1,39 @@
+//This program executes basic arithmetic operations.
 #include <iostream>
 using namespace std;
-
 int main() {
-int stop;
+    cout <<"_____________ CALCULATOR _________________\n" << endl;
+    int num_1, num_2, result, num_3 {0};
+    char operate;//operator variable
     do {
-
-    float operation, num1, num2;
-    char opr; //operators
-    cout << "Enter first number: ";
-    cin >> num1;
-    cout << "Enter second number: ";
-    cin >> num2;
-    cout << "\nEnter an operator(\"+, *, -, /\"):";
-    cin >> opr;
-
-    switch(opr) {
-    case '+':
-        operation = num1 + num2;
-        cout << "\nThe sum of the number " << num1 << " and " << num2 << " is " << operation;
-        break;
-    case '-':
-        operation = num1 - num2;
-        cout << "The subtraction of the number " << num1 << " and " << num2 << " is " << operation;
-        break;
-    case '/':
-        operation = num1 / num2;
-        cout << "The division of the number " << num1 << " and " << num2 << " is " << operation;
-        break;
-    case '*':
-        operation = num1 * num2;
-        cout << "The multiplication of the number " << num1 << " and " << num2 << " is " << operation;
-        break;
-    default:
-        cout << "You enter the wrong operand" << endl;
-    }
-    cout << "\n\nEnter 0 to stop or any number to continue: ";
-    cin >> stop;
-    cout << "\n\n";
-
-
-
-    } while(stop != 0);
+        cout <<"Please enter the first number: ";
+        cin >> num_1;
+        cout <<"Please enter the second number: ";
+        cin >> num_2;
+        loop:
+        cout <<"Enter the type of operation you want, (+ , - , * , / ) or (r) if you want to calculate remainder: ";
+        cin >> operate;
+        switch (operate) {
+            case '+': result = num_1 + num_2;
+            cout << "\nThe sum of the number " << num_1 << " and " << num_2 << " is " << result;
+                break;
+            case '-': result = num_1 - num_2;
+            cout << "\nThe subtraction  of the number " << num_1 << " and " << num_2 << " is " << result;
+                break;
+            case '*': result = num_1 * num_2;
+            cout << "\nThe multiplication of the number " << num_1 << " and " << num_2 << " is " << result;
+                break;
+            case '/': result = num_1 / num_2;
+                cout << "\nThe division  of the number " << num_1 << " by " << num_2 << " is " << result;
+                break;
+            case 'R': case'r': result = num_1 % num_2;
+                cout << "\nThe remainder of the number " << num_1 << " divided by  " << num_2 << " is " << result;
+                break;
+            default: cout << "unknown operator: " << operate << '\n';
+                goto loop;
+        }
+        cout <<"\nPlease enter 0 to quit or any other number to continue: ";
+        cin >> num_3;
+    }while (num_3 != 0);
     return 0;
 }
-
