@@ -3,13 +3,21 @@ Input: The program takes a single character as input from the user.
 Process:
 
 The program uses conditional statements to determine the type of character:
+
 a. Checks if the character is alphabetic (uppercase or lowercase). 
+  
 b. Checks if the character is a digit.
+
 c. Identifies special characters.
+
 If the character is alphabetic, the program further checks:
+
 a. Whether it is uppercase or lowercase. 
+
 b. Whether it is a vowel or a consonant.
+
 If the character is a digit, the program checks whether it is even or odd.
+
 Output: The program provides information about the input character based on the following criteria:
 
 Uppercase letter, lowercase letter, digit, or special character.
