@@ -11,7 +11,7 @@ int main() {
         cout <<"Please enter the second number: ";
         cin >> num_2;
         loop:
-        cout <<"Enter the type of operation you want, (+ , - , * , / ) or (r) if you want to calculate remainder: ";
+        cout <<"Enter the type of operation you want, (+ , - , * , / ) or (%) if you want to calculate remainder: ";
         cin >> operate;
         switch (operate) {
             case '+': result = num_1 + num_2;
@@ -26,7 +26,7 @@ int main() {
             case '/': result = num_1 / num_2;
                 cout << "\nThe division  of the number " << num_1 << " by " << num_2 << " is " << result;
                 break;
-            case 'R': case'r': result = num_1 % num_2;
+            case '%':  result = num_1 % num_2;
                 cout << "\nThe remainder of the number " << num_1 << " divided by  " << num_2 << " is " << result;
                 break;
             default: cout << "unknown operator: " << operate << '\n';
