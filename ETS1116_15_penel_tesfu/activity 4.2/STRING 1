@@ -1,1 +1,34 @@
+#include <iostream>
+#include <iomanip>
+#include <cctype>
+#include <string>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+
+
+     char str[50];
+    cout << "Enter a letter: "<<endl;
+    gets(str);
+    int vowelCount = 0;
+    int consonantCount = 0;
+
+    for (int i = 0; str[i]!='\0'; ++i) {
+
+            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U'){
+                ++vowelCount;
+            } else {
+                ++consonantCount;
+            }
+        }
+
+
+    cout << "\nNumber of vowels: " << vowelCount << "\n";
+    cout << "Number of consonants: " << consonantCount << "\n";
+
+
+    return 0;
+}
 
