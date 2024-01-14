@@ -23,7 +23,7 @@ int main(){
                 cout << "*\t";
             }else{
                 cout << " \t";
-            } */
+            } 
             friends[i][j] == true ? cout << "*   " : cout << "    ";
         }
         cout << '\n';
