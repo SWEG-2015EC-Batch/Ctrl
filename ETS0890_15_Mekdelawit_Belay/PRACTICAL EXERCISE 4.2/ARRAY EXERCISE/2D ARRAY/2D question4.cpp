@@ -7,6 +7,9 @@ using namespace std;
 
 int main()
 {
+  //4. Write C++ program, to read 3*4 2D-array, find and print the sum of even array elements. The
+//program should also print even array elements and ‘*’ instead of odd numbers in tabular form
+	
   int num[3][4];
     int even = 0;
     cout << "Enter 12 numbers"<<endl;
