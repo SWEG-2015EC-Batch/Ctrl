@@ -1,1 +1,25 @@
+#include <iostream>
+#include <cctype>
+
+int main() {
+
+    std::string inputString;
+    std::string resultString;
+
+
+    std::cout << "Enter a string: ";
+    std::getline(std::cin, inputString);
+
+
+    for (char ch : inputString) {
+        if (std::isalpha(ch)) {
+            resultString += ch;
+        }
+    }
+
+
+    std::cout << "String after removing non-alphabetic characters: " << resultString << "\n";
+
+    return 0;
+}
 
