@@ -1,1 +1,31 @@
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <string>
+
+int main() {
+
+    std::string inputLine;
+
+
+    std::cout << "Enter a line of text: ";
+    std::getline(std::cin, inputLine);
+
+
+    std::istringstream tokenizer(inputLine);
+    std::vector<std::string> tokens;
+    std::string token;
+
+    while (tokenizer >> token) {
+        tokens.push_back(token);
+    }
+
+
+    std::cout << "\nTokens (split by spaces):\n";
+    for (const auto& t : tokens) {
+        std::cout << t << "\n";
+    }
+
+    return 0;
+}
 
