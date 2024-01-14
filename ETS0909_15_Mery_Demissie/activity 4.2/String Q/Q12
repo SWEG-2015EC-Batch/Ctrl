@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+#include <cctype>
+#include <string>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+
+       const int  num=10;
+    char correctAnswers[10] = {'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B'};
+    char studentAnswers[10];
+
+
+     cout << "Enter your answers for the test (A, B, C, or D):\n";
+    for (int i = 0; i < 10 ; ++i) {
+        cout << "Question " << i + 1 << ": ";
+        cin >> studentAnswers[i];
+       studentAnswers[i]=toupper(studentAnswers[i]);
+    }
+
+    int score = 0;
+          cout << "\nTest Score and Marked Student Answers:\n";
+    for (int i = 0; i <10; ++i) {
+        cout << "Question " << i + 1 << ": ";
+        cout << "Correct Answer: " << correctAnswers[i] << ", ";
+        cout << "Your Answer: " << studentAnswers[i];
+
+        if (correctAnswers[i] == studentAnswers[i]) {
+            cout << " (Correct)";
+            ++score;
+        } else {
+            cout << " (Incorrect)";
+        }
+        cout << "\n";
+    }
+
+  cout << "\nYour Test Score: " << score << " out of " << " 10 " << "\n";
+
+
+    return 0;
+}
