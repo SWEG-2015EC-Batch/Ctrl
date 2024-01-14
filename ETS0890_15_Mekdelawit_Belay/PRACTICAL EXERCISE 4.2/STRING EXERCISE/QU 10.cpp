@@ -15,13 +15,13 @@ int main()
 
     // Ask users for the password
    cout << "Enter the password: ";
-   cin>>inputPassword[10];
+   cin>>inputPassword;
     // Check whether the input password is correct
-    if (pass[10]==inputPassword[10]) {
+    if (strcmp(pass, inputPassword) == 0) {
         std::cout << "Password is correct. Access granted!\n";
     } else {
         std::cout << "Incorrect password. Access denied!\n";
-        cout<<" Inter the correc password1!!!"<<endl;
+        cout<<" Enter the correct password!!!"<<endl;
     }
     return 0;
 }
