@@ -20,15 +20,15 @@ int main()
 	 }
 	 for(int i=0;i<n;i++){
 	 	 if (totalmark[i] >= 80.0) {
-        cout <<" student " <<i+1<<" Excellent\n";
+        cout <<" student " <<i+1 <<"  "<<totalmark[i]<<"  "<<" Excellent\n";
     } else if (totalmark[i] >= 60.0&&totalmark[i] <80.0) {
-        cout<<" student " <<i+1 << " Very Good\n";
+        cout<<" student " <<i+1 <<"  "<<totalmark[i]<<"  "<< " Very Good\n";
     } else if (totalmark[i] < 60.0&&totalmark[i] >= 50.0) {
-        cout <<" student " <<i+1<< " Fair\n";
+        cout <<" student " <<i+1 <<"  "<<totalmark[i]<<"  "<< " Fair\n";
     } else if (totalmark[i] >= 40.0&&totalmark[i] < 50.0) {
-        cout <<" student " <<i+1<< " Poor\n";
+        cout <<" student " <<i+1 <<"  "<<totalmark[i]<<"  "<< " Poor\n";
     } else {
-        std::cout<<" student " <<i+1 << " Fail\n";
+        std::cout<<" student " <<i+1 <<"  "<<totalmark[i]<<"  "<< " Fail\n";
     }
 	 	
 		 }
