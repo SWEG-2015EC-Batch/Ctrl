@@ -91,3 +91,21 @@
 	 11     address of j after Increments
 	 12     address of j 
 	 12     address of j 
+ ## 6,
+           float a[5];
+	   float *ptr;
+	   ptr=&(a[3]);
+	   *ptr=9.8;
+	   ptr-=2;
+	   *ptr=5;  ptr--;
+	   *ptr=6;
+	   ptr+=3;
+	   *ptr=7; 
+ ## output 
+   a[0]: 6
+   a[1]: 5
+   a[2]: 7
+   a[3]: 9.8
+   a[4]: intialized number
+   ## 7,
+   ## output 
