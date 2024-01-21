@@ -92,3 +92,34 @@
 	 11     address of j after Increments
 	 12     address of j 
 	 12     address of j 
+  ## 6,
+           float a[5];
+	   float *ptr;
+	   ptr=&(a[3]);
+	   *ptr=9.8;
+	   ptr-=2;
+	   *ptr=5;  ptr--;
+	   *ptr=6;
+	   ptr+=3;
+	   *ptr=7; 
+ ## output 
+   a[0] : 6
+     a[1] : 5 
+      a[2] : 7
+        a[3] : 9.8
+          a[4] : intialized number
+   
+   ## 7,
+           float mark[3][5]={{10,11,12,13,14}, {20,21,22,23,24},{30,31,32,33,34}};
+	   float *ptr=mark[0];
+	   ptr+=2;
+	   *ptr *=2;
+	   ptr=*(mark+1)+3;
+	   *ptr+=7;
+	   ptr+=4;
+	   *ptr+=8;
+	   
+   ## output 
+       10 11 24 13 14 
+       20 21 22 30 24 
+       30 31 32 33 42
