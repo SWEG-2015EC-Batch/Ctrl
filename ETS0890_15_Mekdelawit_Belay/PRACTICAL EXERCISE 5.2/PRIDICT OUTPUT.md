@@ -25,3 +25,13 @@
 - <address_of_Arr2> <address_of_Arr2>
 - <address_of_Arr2[2]> <address_of_ptr1>
 
+## 2,
+     int a,*p,**q;
+     a=58;
+     p=&a;
+     q=&p;
+     cout<< a<<" ";
+     cout<< *p<<" ";
+     cout<< **q<<" ";
+## output
+- 58 58 58
