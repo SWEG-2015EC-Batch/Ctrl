@@ -63,15 +63,15 @@
 	 10 **ptrptr=&i;
 	 11 *ptr=-2;
  ## output
-         i    j     ptr   ptrptr
-   4     5    10    &i    dangling
-   5     5    10    &i    &ptr
-   6     3    10    &i    &ptr
-   7     7    10    &i    &ptr
-   8     7    10    &j    &ptr
-   9     7    9     &j    &ptr
-   10    7    9     &i    &ptr
-   11   -2    9     &i    &ptr
+        i    j     ptr   ptrptr
+        5    10    &i    dangling
+        5    10    &i    &ptr
+        3    10    &i    &ptr
+        7    10    &i    &ptr
+        7    10    &j    &ptr
+        7    9     &j    &ptr
+        7    9     &i    &ptr
+       -2    9     &i    &ptr
 ## 5,
      int i=5, j=10;
      int *ptr=&i,**ptrptr=&ptr;
