@@ -63,7 +63,7 @@
 	 10 **ptrptr=&i;
 	 11 *ptr=-2;
  ## output
--       i    j     ptr   ptrptr
+        i    j     ptr   ptrptr
   - 4   5    10    &i    dangling
   - 5   5    10    &i    &ptr
   - 6   3    10    &i    &ptr
