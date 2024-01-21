@@ -1,4 +1,4 @@
- - 1,
+## 1,
     int V, *ptr1, *ptr2 = &V;
     int Arr1[5];
     ptr1 = &(Arr1[2]);
@@ -14,7 +14,7 @@
     cout << ptr2 << " " << &ptr2 << endl;
     cout << Arr2 << " " << &Arr2 << endl; 
     cout << Ptr1 << " " << &Ptr1 << endl; 
-# output
+## output
 <random_value> <address_of_V>
 <address_of_V> <address_of_ptr2>
 <address_of_Arr1> <address_of_Arr1>
