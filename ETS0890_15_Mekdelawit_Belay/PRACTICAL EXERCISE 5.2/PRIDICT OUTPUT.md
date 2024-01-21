@@ -50,3 +50,16 @@
 	   k=4 x=address of k(950) y=address of ptr(3000)
 	   k=14
 	   k=28
+## 4,
+           int i=5,j=10;
+	   int *ptr;
+	   int **ptrptr;
+	   ptr=&i;
+	   ptrptr=&ptr;
+	   *ptr=3;
+	   **ptrptr=7;
+	   ptr=&j;
+	   **ptrptr=9;
+	   **ptrptr=&i;
+	   *ptr=-2;
+    ## output
