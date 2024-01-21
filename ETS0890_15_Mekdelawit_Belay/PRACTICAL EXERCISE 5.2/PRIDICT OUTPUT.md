@@ -84,7 +84,7 @@
 	   cout<<(*ptr)++<<" "<<ptr<<endl;
 	 
 ## output
-         5      address of i
+          5      address of i
 	 10     address of j 
 	 10     address of j after Increments
 	 11     address of j after Increments
