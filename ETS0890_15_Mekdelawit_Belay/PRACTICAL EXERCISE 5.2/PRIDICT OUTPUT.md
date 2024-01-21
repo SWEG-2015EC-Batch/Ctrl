@@ -36,16 +36,16 @@
 ## output
 - 58 58 58
 ## 3,
-  int k=4,*ptr,**ptrptr;
-  ptr=&k, ptrptr=&ptr;
-  cout<<" k="<<k;
-  cout<<" x="<<ptr;
-  cout<<" y="<<ptrptr;
-  cout<<endl;
-	   *ptr=k+10;
-	   cout<<" k="<<k<<endl;
-	   **ptrptr=*ptr+k;
-	   cout<<" k="<<k<<endl;
+     int k=4,*ptr,**ptrptr;
+     ptr=&k, ptrptr=&ptr;
+     cout<<" k="<<k;
+     cout<<" x="<<ptr;
+     cout<<" y="<<ptrptr;
+     cout<<endl;
+     *ptr=k+10;
+     cout<<" k="<<k<<endl;
+     **ptrptr=*ptr+k;
+     cout<<" k="<<k<<endl;
    ## output
 	   k=4 x=address of k(950) y=address of ptr(3000)
 	   k=14
