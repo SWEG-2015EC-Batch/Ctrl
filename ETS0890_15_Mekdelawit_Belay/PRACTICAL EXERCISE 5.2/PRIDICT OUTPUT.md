@@ -51,15 +51,24 @@
 	   k=14
 	   k=28
 ## 4,
-           int i=5,j=10;
-	   int *ptr;
-	   int **ptrptr;
-	   ptr=&i;
-	   ptrptr=&ptr;
-	   *ptr=3;
-	   **ptrptr=7;
-	   ptr=&j;
-	   **ptrptr=9;
-	   **ptrptr=&i;
-	   *ptr=-2;
-    ## output
+         1  int i=5,j=10;
+	 2  int *ptr;
+	 3  int **ptrptr;
+	 4  ptr=&i;
+	 5  ptrptr=&ptr;
+	 6  *ptr=3;
+	 7  **ptrptr=7;
+	 8  ptr=&j;
+	 9  **ptrptr=9;
+	 10 **ptrptr=&i;
+	 11 *ptr=-2;
+ ## output
+     i    j     ptr   ptrptr
+4    5    10    &i    dangling
+5    5    10    &i    &ptr
+6    3    10    &i    &ptr
+7    7    10    &i    &ptr
+8    7    10    &j    &ptr
+9    7    9     &j    &ptr
+10   7    9     &i    &ptr
+11  -2    9     &i    &ptr
