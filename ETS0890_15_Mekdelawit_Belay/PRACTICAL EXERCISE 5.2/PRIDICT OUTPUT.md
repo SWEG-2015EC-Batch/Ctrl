@@ -15,14 +15,15 @@
     cout << Arr2 << " " << &Arr2 << endl; 
     cout << Ptr1 << " " << &Ptr1 << endl; 
 ## output
- <random_value> <address_of_V>
- <address_of_V> <address_of_ptr2>
- <address_of_Arr1> <address_of_Arr1>
- <address_of_Arr1[2]> <address_of_ptr1>
+ - <random_value> <address_of_V>
+ - <address_of_V> <address_of_ptr2>
+ - <address_of_Arr1> <address_of_Arr1>
+ - <address_of_Arr1[2]> <address_of_ptr1>
 
- <random_value> <address_of_V>
- <address_of_V> <address_of_ptr2>
- <address_of_Arr2> <address_of_Arr2>
- <address_of_Arr2[2]> <address_of_ptr1>
+- <random_value> <address_of_V>
+- <address_of_V> <address_of_ptr2>
+- <address_of_Arr2> <address_of_Arr2>
+- <address_of_Arr2[2]> <address_of_ptr1>
 
 
+-
