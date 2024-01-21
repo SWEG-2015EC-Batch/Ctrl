@@ -63,7 +63,7 @@
 	 10 **ptrptr=&i;
 	 11 *ptr=-2;
  ## output
-        i    j     ptr   ptrptr
+   -    i    j     ptr   ptrptr
   - 4   5    10    &i    dangling
   - 5   5    10    &i    &ptr
   - 6   3    10    &i    &ptr
@@ -72,3 +72,15 @@
   - 9   7    9     &j    &ptr
   - 10  7    9     &i    &ptr
   - 11 -2    9     &i    &ptr
+## 5,
+     int i=5, j=10;
+     int *ptr=&i,**ptrptr=&ptr;
+	    cout<<*ptr++<<" "<<ptr<<endl;
+	    cout<<*(ptr++)<<" "<<ptr<<endl;
+	    cout<<*++ptr<<" "<<ptr<<endl;
+	    cout<<*(++ptr)<<" "<<ptr<<endl;
+	   cout<<++*ptr<<" "<<ptr<<endl;
+	   cout<<++(*ptr)<<" "<<ptr<<endl;
+	   cout<<(*ptr)++<<" "<<ptr<<endl;
+	 
+## output
