@@ -25,5 +25,3 @@
 - <address_of_Arr2> <address_of_Arr2>
 - <address_of_Arr2[2]> <address_of_ptr1>
 
-
--
