@@ -15,15 +15,15 @@
     cout << Arr2 << " " << &Arr2 << endl; 
     cout << Ptr1 << " " << &Ptr1 << endl; 
 ## output
- - <random_value> <address_of_V>
- - <address_of_V> <address_of_ptr2>
- - <address_of_Arr1> <address_of_Arr1>
- - <address_of_Arr1[2]> <address_of_ptr1>
+ - value of v  address of V
+ - address_of V  address of ptr2
+ - address of Arr1  address of Arr1 
+ -  address of Arr1[2]  address_of_ptr1 
 
-- <random_value> <address_of_V>
-- <address_of_V> <address_of_ptr2>
-- <address_of_Arr2> <address_of_Arr2>
-- <address_of_Arr2[2]> <address_of_ptr1>
+- value of v  address_of_V
+- address_of_V  address_of_ptr2
+- address_of_Arr2   address_of_Arr2
+- address_of_Arr2[2]  address_of_ptr1
 
 ## 2,
      int a,*p,**q;
@@ -47,7 +47,7 @@
      **ptrptr=*ptr+k;
      cout<<" k="<<k<<endl;
    ## output
-	   k=4 x=address of k(950) y=address of ptr(3000)
+	   k=4 x=950 y=3000
 	   k=14
 	   k=28
 ## 4,
@@ -60,18 +60,20 @@
 	 7  **ptrptr=7;
 	 8  ptr=&j;
 	 9  **ptrptr=9;
-	 10 **ptrptr=&i;
+	 10 **ptrptr=&i;			   
 	 11 *ptr=-2;
  ## output
-        i    j     ptr   ptrptr
-        5    10    &i    dangling
-        5    10    &i    &ptr
-        3    10    &i    &ptr
-        7    10    &i    &ptr
-        7    10    &j    &ptr
-        7    9     &j    &ptr
-        7    9     &i    &ptr
-       -2    9     &i    &ptr
+     
+Line	Value
+	i	j	ptr	    pptr
+4	5	10     0x37129	   dangling
+5	5	10     0x37129	   0x1fc825
+6	3	10     0x37129	   0x1fc825
+7	7	10     0x37129	   0x1fc825	
+8	7	10     0x5863a	   0x1fc825
+9	7	9      0x5863a	   0x1fc825	
+10	7	9      0x37129	   0x1fc825	
+11	-2	9      0x37129	   0x1fc825	
 ## 5,
      int i=5, j=10;
      int *ptr=&i,**ptrptr=&ptr;
@@ -84,13 +86,13 @@
 	   cout<<(*ptr)++<<" "<<ptr<<endl;
 	 
 ## output
-   5      address of i
-	 10     address of j 
-	 10     address of j after Increments
-	 11     address of j after Increments
-	 11     address of j after Increments
-	 12     address of j 
-	 12     address of j 
+         5      address of 5
+	 5      address of 5 after increament
+	 10     address of 10 after increament
+	 10     address of 10 
+	 11     address of 11 
+	 12     address of 12 
+	 12     address of 12 
  ## 6,
            float a[5];
 	   float *ptr;
@@ -103,10 +105,10 @@
 	   *ptr=7; 
  ## output 
    a[0] : 6
-     a[1] : 5 
-      a[2] : 7
-        a[3] : 9.8
-          a[4] : intialized number
+   a[1] : 5 
+   a[2] : 7
+   a[3] : 9.8
+   a[4] : intialized number
    
    ## 7,
            float mark[3][5]={{10,11,12,13,14}, {20,21,22,23,24},{30,31,32,33,34}};
@@ -119,6 +121,6 @@
 	   *ptr+=8;
 	   
    ## output 
-       10 11 24 13 14 
-       20 21 22 30 24 
-       30 31 32 33 42 
+       Mark[0][2]=24
+       Mark[1][3]=30
+       Mark[2][2]=40
