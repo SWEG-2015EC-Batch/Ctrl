@@ -1,3 +1,13 @@
+//    GROUP MEMBERS INFORMATION
+// 1, penel Tesfu          Id ETS1116/15
+// 2, Mery Demissie        Id ETS 0909/15
+// 3, Mekdelawit Belay     Id ETS0890/15 
+// 4, Nueman Mohammednur    Id ETS1101/15
+// 5, Meskerem Fekede       Id ETS0914/15
+
+
+
+
 // PATTERN
 #include <iostream>
   using namespace std;
