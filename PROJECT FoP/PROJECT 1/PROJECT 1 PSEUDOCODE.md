@@ -1,15 +1,18 @@
   # PROGRAM ANALYSIS
-  - INPUT: n - number of students,
+  - INPUT: read n
+             - n number of students,
              - first name, last name,
              - performance hours for 7 days
              - individual- 0, 1, or 2 to see specific information
              - Read roll number, i+1
              - read first name and last name
              - Read m to continue or to end
-  - OUTPUT:  - Display name, each day performance, total hours, and average in tabular form
+  - OUTPUT:
+             - Display name, each day performance, total hours, and average in tabular form
              - Display name, each day performance, total hours in tabular form based on the given roll number
              - Display name, each day performance, total hours in tabular form based on the given name
-  - OPERATION:- Read n - number of students
+  - OPERATION:
+              - Read n - number of students
               - Accept first name, last name, performance hours for 7 days
               - Initialize i=0 
               - Check i=n
