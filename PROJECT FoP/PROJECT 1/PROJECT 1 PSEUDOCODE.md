@@ -1,14 +1,51 @@
   # PROGRAM ANALYSIS
-  - INPUT:
-  - OUTPUT:
-  - OPERATION:
+  - INPUT: n - number of students,
+             - first name, last name,
+             - performance hours for 7 days
+             - individual- 0, 1, or 2 to see specific information
+             - Read roll number, i+1
+             - read first name and last name
+             - Read m to continue or to end
+  - OUTPUT:  - Display name, each day performance, total hours, and average in tabular form
+             - Display name, each day performance, total hours in tabular form based on the given roll number
+             - Display name, each day performance, total hours in tabular form based on the given name
+  - OPERATION:- Read n - number of students
+              - Accept first name, last name, performance hours for 7 days
+              - Initialize i=0 
+              - Check i=n
+              - False goto Accept first name, last name, performance hours for 7 days 
+              - Calculate total hours of performance for n students
+              - Calculate average for each days
+              - Display name, each day performance, total hours, and average in tabular form
+              - Read individual 0, 1, or 2 to see specific information
+              - If individual=1, read rol.no/i+1
+              - Display name, each day performance, total hours in tabular form based on the given roll number
+              - If individual=2
+              - read first name and last name
+              - Display name, each day performance, total hours in tabular form based on the given name
+              - If individual=0 , End the program
+              - Read m to continue or to end
+              - If m=0 End the program
+              - If m is other number read individual              
+
    # PSEUDOCODE 
-   - STEP1:
-   - STEP2:
-   - STEP3:
-   - STEP3:
-   - STEP3:
-   - STEP3:
-   - STEP3:
-   - STEP3:
-   - STEP3:   - 
+   - STEP1:Start
+   - STEP2:Read n - number of students
+   - STEP3:Accept first name, last name, performance hours for 7 days
+   - STEP4:Initialize i=0
+   - STEP5:Check i=n,if it Is false go to step 2
+   - STEP6:if it is true Calculate total hours of performance for n students
+   - STEP7:Calculate average for each days
+   - STEP8:Display name, each day performance, total hours, and average in tabular form
+   - STEP9:Read individual 0, 1, or 2 to see specific information
+   - STEP10:If individual=1
+   - STEP11:read rol.no/i+1
+   - STEP12:Display name, each day performance, total hours in tabular form based on the given roll number
+   - STEP13:If individual=2
+   - STEP14:read first name and last name
+   - STEP15:Display name, each day performance, total hours in tabular form based on the given name
+   - STEP16:If individual=0 , End the program
+   - STEP17:Read m to continue or to end
+   - STEP18:If m=0 End the program
+   - STEP19:If m is other number goto step-9
+    
